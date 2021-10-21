@@ -1,0 +1,119 @@
+:root{
+    --red: rgb(190, 38, 38);
+    --white: white;
+    --colorInput: #E5E5E5;
+    --green: #33CC95;
+    --background: #5429cce3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: var(--background) ;
+}
+
+form{
+    display: flexbox;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+button{
+    background-color: var(--green);
+    border-radius:5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: var(--white);
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: rgba(27, 28, 29, 0.233);
+    cursor: pointer;
+}
+
+form button{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: var(--white);
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--green);
+    font-size: 18px;
+}
+
+input {
+    border: none;
+    background-color: var(--colorInput);
+    width: 250px;
+    height: 25px;
+    padding: 20px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 15px;
+}
+
+#Container{
+    width: 100vw;
+}
+
+img{
+    max-width: 400px;
+    height: 100px;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 580px;
+}
+
+#Table{
+    display: inline;
+    color: white; 
+    margin-left: 50px;
+    font-size: 24px;
+    margin-bottom: 50px;
+    max-width: 120px;
+}
+#Table th{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+}
+#Table tr{ 
+    text-align: center;
+    height: 100px;
+}
+
+#Table td{ 
+    text-align: center;
+    border: solid 1px white;
+}
+h1{
+    width: 300px;
+    text-align: center;
+    margin-left: 37%;
+    display: block;
+    border-radius: 80px;
+    color: var(--white);
+}
+
+h2{
+    width: 200px;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: -20px;
+    border-radius: 100px;
+    color: var(--white);
+}
+
+h3{
+    color: var(--white);
+    text-align: center;
+    font-size: 25px;
+}
