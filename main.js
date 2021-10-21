@@ -27,6 +27,7 @@
                     app.addNameCompany(myCompany.name, myCompany.phone);
                 })
             },
+
             addNameCompany: function addNameCompany(name, phone) {
                 var $div = doc.getElementById("Names");
                 $div.innerHTML = `<h1>${name}</h1><h2>${phone}</h2>`;
@@ -41,7 +42,7 @@
                 if (!app.verificaInput()) return alert("Preencha todos os dados");
                 app.addTable(dates);
                 app.saveCar();
-                app.resetInpus();
+                app.resetInputs();
             },
 
             addTable: function addTable(array){
@@ -100,8 +101,7 @@
                     var item = fater.parentNode;
                     var placa = item.children[2];
                     app.removeCarServer(placa.innerHTML);
-                });
-               
+                }); 
             },
 
             removeCarServer: function removeCarServer(placa){
@@ -117,7 +117,7 @@
                 return dates.every(isClean);
             },
 
-            resetInpus: function resetInpus(){
+            resetInputs: function resetInpus(){
                 inputs.forEach(item => {
                     item.value = '';
                 });
